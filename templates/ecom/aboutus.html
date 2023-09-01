@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Agrocraft AgriBusiness Portal</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color:#f7f7f7;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+<h3 style="text-align:center;">
+  <h1><center>Welcome to our Agrocraft Agribusiness Portal !</center></h1>
+  We are dedicated to revolutionizing 
+  the agricultural industry by integrating innovative technologies and sustainable practices to enhance
+   productivity, profitability, and environmental stewardship. Our mission is to contribute to global 
+   food security while promoting responsible farming methods and supporting rural communities.
+  At our core, we believe that agriculture plays a vital role in addressing the challenges of a growing
+   population, climate change, and diminishing natural resources. Through our agribusiness project, we 
+   aim to empower farmers with the knowledge, tools, and resources they need to thrive in a rapidly
+    evolving industry.<br><br>
+    Our key focus areas include:
+<br><br>
+Technological Advancements: We harness the power of cutting-edge technologies such as precision agriculture, data analytics, remote sensing, and artificial intelligence to optimize farming practices.
+ By leveraging these tools, we enable farmers to make data-driven decisions, increase operational efficiency, and reduce waste.
+<br><br>
+Sustainable Farming Practices: We prioritize sustainable farming methods that promote soil health, water conservation, biodiversity preservation, and minimal environmental impact. Our goal is to help farmers adopt regenerative agriculture practices, implement efficient irrigation systems, reduce chemical inputs, and implement renewable energy solutions.
+<br><br>
+Knowledge Sharing and Capacity Building: We understand the importance of knowledge sharing and continuous learning in the agricultural sector. We organize training programs, workshops, and educational events to equip farmers with the latest information, best practices, and technical skills required to excel in their operations.
+<br><br>
+Market Access and Value Chain Integration: We strive to bridge the gap between farmers and markets by facilitating direct market access, connecting farmers with potential buyers, and promoting fair trade practices. Additionally, we collaborate with stakeholders across the agricultural value chain to foster partnerships and create opportunities for growth and profitability.
+<br><br>
+Community Development: We believe in the social and economic upliftment of rural communities. By empowering farmers, supporting local entrepreneurship, and investing in infrastructure development, we aim to contribute to the overall development and well-being of the communities we work with.
+<br><br>
+Our agribusiness project is driven by a team of passionate professionals with expertise in agriculture, technology, sustainability, and business. We collaborate with farmers, industry experts, research institutions, and government agencies to create a collaborative ecosystem that fosters innovation, resilience, and sustainable growth.
+<br><br>
+Through our efforts, we envision a future where agriculture is not only productive and profitable but also environmentally sustainable, socially responsible, and inclusive. We are committed to making a positive impact on the agribusiness landscape and contributing to a sustainable and food-secure world.
+<br><br>
+<h1><center>Thank You for Visiting our Website !!</center></h1>
+  </h3>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+<!--
+developed By : Amol
+-->
+
+</html>
